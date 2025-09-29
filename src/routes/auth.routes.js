@@ -17,4 +17,11 @@ router.post("/login", validators.loginUserValidations , authController.loginUser
 router.get("/me", authMiddleware.authMiddlewarer, authController.getCurrentUser);
 router.get("/logout", authController.logoutUser);
 
+router.get('/users/me/adresses', authMiddleware.authMiddlewarer, authController.getUserAdresses)
+router.post('/users/me/adresses', validators.addUserAddressValidations ,authMiddleware.authMiddlewarer, authController.addUserAdresses)
+router.delete('/users/me/adresses/:addressId', authMiddleware.authMiddlewarer, authController.deleteUserAddress)
+
+
+
+
 module.exports = router;

@@ -1,0 +1,5 @@
+MONGO_URL=mongodb://localhost:27017/SuperNova
+JWT_SECRET=9f3a8b6df47c29d7c7c9d0a5b8720f6c3dd8d82a7e3c9f81208c6a9f2adbb55f
+REDIS_MOST=redis-13237.c305.ap-south-1-1.ec2.redns.redis-cloud.com:
+REDIS_PORT=13237
+REDIS_PASSWORD=b2VwYPN1ukrToNF117yQu1gnAU8J3hQK
